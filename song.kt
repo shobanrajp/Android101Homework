@@ -9,7 +9,8 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-
+		
+		//String Variable
         val song: String = "Smack That ft. Eminem"
         Log.d("Song:", song)
 
@@ -22,14 +23,18 @@ class MainActivity : AppCompatActivity() {
         val released: String = "September 25, 2006"
         Log.d("Released:", released  )
 
-
+		//Integer Variable
         val recorded: Int = 2006
         Log.d("Recorded:", recorded.toString())
 
         val genres: String = "Contemporary R&B, Reggae, R&B/Soul, Hip-Hop/Rap"
         Log.d("Genres:", genres)
 
-
+		/*
+		Boolean is used to find the true or false value for 
+		the give control expression
+		*/
+		
         val isArtistString: Boolean = artist is String
         Log.d("ArtistCheck:", isArtistString.toString())
 
